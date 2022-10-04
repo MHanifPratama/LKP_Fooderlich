@@ -1,12 +1,12 @@
 class SimpleRecipe {
-  String dishImage;
-  String title;
-  String duration;
-  String source;
-  List<String> information;
+  String? dishImage;
+  String? title;
+  String? duration;
+  String? source;
+  List<String>? information;
 
   SimpleRecipe(
-      required this.dishImage, required this.title, required this.duration, required this.source, required this.information);
+      this.dishImage, this.title, this.duration, this.source, this.information);
 
   SimpleRecipe.fromJson(Map<String, dynamic> json) {
     dishImage = json['dishImage'];
