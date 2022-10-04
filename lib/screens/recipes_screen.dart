@@ -11,7 +11,7 @@ class RecipesScreen extends StatelessWidget {
         future: exploreService.getRecipes(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            return RecipesGridView(recipes: snapshot.data!);
+            return RecipesGridViewCrossAxis(recipes: snapshot.data!);
           } else {
             return const Center(child: CircularProgressIndicator());
           }
