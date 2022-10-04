@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 // import 'components/card1.dart';
 // import 'components/card2.dart';
 // import 'components/card3.dart';
-
+import 'screens/explore_screen.dart';
 import 'models/explore_recipe.dart';
 import 'components/components.dart';
+import 'screens/recipes_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -15,6 +16,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
   static List<Widget> pages = <Widget>[
+    ExploreScreen(),
+    RecipesScreen(),
     Card1(
         recipe: ExploreRecipe(
             authorName: 'Ray Wenderlich',

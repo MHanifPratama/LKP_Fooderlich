@@ -64,9 +64,13 @@ flutter:
     - assets/mag1.png
     - assets/mag2.png
     - assets/mag5.png
-    - assets/magazine_pics/card_bread.jpg
-    - assets/profile_pics/person_katz.jpeg
-    - assets/magazine_pics/mag3.png
+    - assets/magazine_pics/
+    - assets/profile_pics/
+    - assets/food_pics/
+    - assets/magazine_pics/
+    - assets/sample_data/sample_explore_recipes.json
+    - assets/sample_data/sample_friends_feed.json
+    - assets/sample_data/sample_recipes.json
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
