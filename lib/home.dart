@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
   static List<Widget> pages = <Widget>[
     ExploreScreen(),
     RecipesScreen(),
-    const GroceryScreen(),
+    const GroceryScreen()
     // Card1(
     //     recipe: ExploreRecipe(
     //         authorName: 'Ray Wenderlich',
