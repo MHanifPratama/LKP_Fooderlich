@@ -17,9 +17,19 @@ class Fooderlich extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = FooderlichTheme.dark();
     return MaterialApp(
-      title: 'Fooderlich',
-      theme: theme,
-      home: const Home(),
-    );
+        title: 'Fooderlich',
+        theme: theme,
+        // home: const Home(),
+        home: MultiProvider(
+          providers: [
+            ChangeNotifierProvider(
+              create: (context) => TabManager(),
+            ),
+            ChangeNotifierProvider(
+              create: (context) => GroceryManager(),
+            ),
+          ],
+          child: const Home(),
+        ));
   }
 }
