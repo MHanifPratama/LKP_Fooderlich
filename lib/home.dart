@@ -45,11 +45,11 @@ class _HomeState extends State<Home> {
                 },
                 items: <BottomNavigationBarItem>[
                   const BottomNavigationBarItem(
-                      icon: Icon(Icons.home), label: 'Card'),
+                      icon: Icon(Icons.explore), label: 'Explore'),
                   const BottomNavigationBarItem(
-                      icon: Icon(Icons.receipt), label: 'Card2'),
+                      icon: Icon(Icons.book), label: 'Recipes'),
                   const BottomNavigationBarItem(
-                      icon: Icon(Icons.person), label: 'Card3'),
+                      icon: Icon(Icons.list), label: 'To Buy'),
                 ]));
       },
     );
